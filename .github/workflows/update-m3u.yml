@@ -1,0 +1,35 @@
+name: Update Aloula M3U
+
+on:
+  schedule:
+    # Runs every 6 hours (UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install Dependencies
+      run: |
+        pip install requests
+
+    - name: Run Scraper
+      run: python scrape_aloula.py
+
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add aloula_live.m3u
+        git commit -m "Auto-update: Refreshing HLS tokens and stream URLs" || exit 0
+        git push
