@@ -1,1 +1,49 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="قناة السعودية – البث المباشر" tvg-name="قناة السعودية – البث المباشر" tvg-logo="", قناة السعودية – البث المباشر
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+saudia
+#EXTINF:-1 tvg-id="قناة SBC – البث المباشر" tvg-name="قناة SBC – البث المباشر" tvg-logo="", قناة SBC – البث المباشر
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+sbc
+#EXTINF:-1 tvg-id="قناة الإخبارية – البث المباشر" tvg-name="قناة الإخبارية – البث المباشر" tvg-logo="", قناة الإخبارية – البث المباشر
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+alekhbariya
+#EXTINF:-1 tvg-id="السعودية الآن" tvg-name="السعودية الآن" tvg-logo="", السعودية الآن
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+saudiaalaan
+#EXTINF:-1 tvg-id="قناة ذكريات – البث المباشر" tvg-name="قناة ذكريات – البث المباشر" tvg-logo="", قناة ذكريات – البث المباشر
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+thikrayat
+#EXTINF:-1 tvg-id="قناة القرآن الكريم – البث المباشر" tvg-name="قناة القرآن الكريم – البث المباشر" tvg-logo="", قناة القرآن الكريم – البث المباشر
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+quran
+#EXTINF:-1 tvg-id="قناة السنة النبوية – البث المباشر" tvg-name="قناة السنة النبوية – البث المباشر" tvg-logo="", قناة السنة النبوية – البث المباشر
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+sunna
+#EXTINF:-1 tvg-id="قناة الرياضية 1" tvg-name="قناة الرياضية 1" tvg-logo="", قناة الرياضية 1
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+riyadiya1
+#EXTINF:-1 tvg-id="قناة الرياضية 2" tvg-name="قناة الرياضية 2" tvg-logo="", قناة الرياضية 2
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+riyadiya2
+#EXTINF:-1 tvg-id="قناة الرياضية 3" tvg-name="قناة الرياضية 3" tvg-logo="", قناة الرياضية 3
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+riyadiya3
+#EXTINF:-1 tvg-id="إذاعة الرياض" tvg-name="إذاعة الرياض" tvg-logo="", إذاعة الرياض
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+riyadhradio
+#EXTINF:-1 tvg-id="إذاعة جدة" tvg-name="إذاعة جدة" tvg-logo="", إذاعة جدة
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+jeddahradio
+#EXTINF:-1 tvg-id="إذاعة القران الكريم" tvg-name="إذاعة القران الكريم" tvg-logo="", إذاعة القران الكريم
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+quranradio
+#EXTINF:-1 tvg-id="إذاعة نداء الاسلام" tvg-name="إذاعة نداء الاسلام" tvg-logo="", إذاعة نداء الاسلام
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+nidaalislamadio
+#EXTINF:-1 tvg-id="إذاعة خزامى" tvg-name="إذاعة خزامى" tvg-logo="", إذاعة خزامى
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+khuzamaradio
+#EXTINF:-1 tvg-id="راديو السعودية" tvg-name="راديو السعودية" tvg-logo="", راديو السعودية
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+saudiaradio
