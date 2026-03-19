@@ -2,34 +2,46 @@ name: Update Aloula M3U
 
 on:
   schedule:
-    # Runs every 6 hours (UTC)
-    - cron: '0 */6 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch:      # Allows you to click "Run workflow" manually
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # This block grants the bot permission to write back to the repo
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4 # Updated to v4 for 2026 compatibility
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.9'
+        python-version: '3.10'
 
     - name: Install Dependencies
       run: |
+        python -m pip install --upgrade pip
         pip install requests
 
     - name: Run Scraper
       run: python scrape_aloula.py
 
     - name: Commit and Push Changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add aloula_live.m3u
-        git commit -m "Auto-update: Refreshing HLS tokens and stream URLs" || exit 0
-        git push
+        
+        # Check if there are changes to avoid empty commit errors
+        if [ -n "$(git status --porcelain)" ]; then
+          git add aloula_live.m3u
+          git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+        else
+          echo "No changes detected in M3U file. Skipping push."
+        fi
